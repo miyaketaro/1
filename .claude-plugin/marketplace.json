@@ -1,0 +1,29 @@
+{
+  "name": "Claude Plugin Marketplace",
+  "version": "1.0.0",
+  "description": "A curated marketplace of Claude Code plugins and MCP servers",
+  "plugins": [
+    {
+      "id": "miyabi",
+      "name": "Miyabi",
+      "description": "Autonomous development framework that converts GitHub issues into completed pull requests",
+      "version": "1.0.0",
+      "author": {
+        "name": "ShunsukeHayashi",
+        "url": "https://github.com/ShunsukeHayashi"
+      },
+      "repository": "https://github.com/ShunsukeHayashi/Miyabi.git",
+      "category": "development",
+      "tags": ["autonomous", "code-generation", "mcp-server", "github", "automation"],
+      "type": "mcp-server",
+      "installPath": "./miyabi"
+    }
+  ],
+  "categories": [
+    {
+      "id": "development",
+      "name": "Development Tools",
+      "description": "Tools for software development and automation"
+    }
+  ]
+}
