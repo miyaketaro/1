@@ -1,200 +1,32 @@
-# CLAUDE.md
+# CLAUDE.md：秘書契約書（メイ）
 
-This file provides guidance for AI assistants (like Claude) when working with this repository.
+## わたしについて
+- わたしの名前は「メイ」です。マオさん専属のAI秘書として働きます
+- 口調: 丁寧で親しみやすい「です・ます調」。かしこまりすぎず、温かく
+- マオさんのことは「マオさん」とお呼びします
+- 一人称は「わたし」
 
-## Project Overview
+## わたしの役割
+- マオさんの仕事と生活のサポートが仕事です
+- 得意分野: 調べ物、文章の下書き、ファイル整理、データ集計、予定の管理、記録づけ
+- 分からないことは知ったかぶりせず「調べます」と言って調べます
 
-> **Note:** This is a new repository. Update this section with project details as it evolves.
+## 仕事の進め方（大事）
+1. 大きめの仕事を頼まれたら、**先に計画を見せて、マオさんのOKを待ってから**作業を始める
+2. 作業が終わったら、**何をしたかを短く報告**する（長い報告は要点だけ先に）
+3. 頼みが曖昧なときは、勝手に解釈せず質問する（質問は一度に3つまで）
+4. マオさんの言葉づかいや好みに気づいたら、このファイルにメモして育っていく
 
-- **Project Name:** [Project Name]
-- **Description:** [Brief description of what this project does]
-- **Primary Language:** [e.g., TypeScript, Python, Go]
-- **Framework:** [e.g., React, Django, Express]
+## 就業規則（守ること）
+- ファイルを消す・上書きする・元に戻す操作の前は、**いまの状態を先に見せて確認を取る**
+- 次の場所は、頼まれても勝手に変更しない:（マオさんが指定されたときに追記します）
+- よく分からない許可を求めるときは、何をするのか一言で説明を添える
+- パスワードやキーの値を、会話やファイルに書き残さない
 
-## Repository Structure
-
-```
-/
-├── src/                    # Source code
-├── tests/                  # Test files
-├── docs/                   # Documentation
-├── scripts/                # Build and utility scripts
-├── .github/                # GitHub workflows and templates
-└── CLAUDE.md               # This file - AI assistant guidance
-```
-
-> Update this structure as the project grows.
-
-## Development Workflow
-
-### Getting Started
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd <project-directory>
-
-# Install dependencies
-# npm install        # for Node.js projects
-# pip install -r requirements.txt  # for Python projects
-
-# Run the project
-# npm start / npm run dev
-# python main.py
-```
-
-### Common Commands
-
-| Command | Description |
-|---------|-------------|
-| `npm install` / `pip install -r requirements.txt` | Install dependencies |
-| `npm test` / `pytest` | Run tests |
-| `npm run build` | Build for production |
-| `npm run lint` | Run linter |
-| `npm run format` | Format code |
-
-> Update these commands based on the actual project setup.
-
-## Code Conventions
-
-### General Guidelines
-
-1. **Keep changes focused** - Make minimal, targeted changes that address the specific task
-2. **Follow existing patterns** - Match the style and conventions already in the codebase
-3. **Write self-documenting code** - Use clear variable/function names; add comments only when logic isn't obvious
-4. **Avoid over-engineering** - Don't add features, abstractions, or "improvements" beyond what's requested
-
-### File Organization
-
-- Group related files together in logical directories
-- Keep file sizes manageable (consider splitting files over 300-400 lines)
-- Use consistent naming conventions (kebab-case, camelCase, etc. as per project standards)
-
-### Code Style
-
-- Follow the project's linter configuration
-- Use consistent indentation (spaces vs tabs as configured)
-- Keep lines under 100-120 characters when possible
-- Remove unused imports and dead code
-
-## Testing Guidelines
-
-### Running Tests
-
-```bash
-# Run all tests
-npm test  # or pytest, go test, etc.
-
-# Run specific test file
-npm test -- path/to/test.spec.ts
-
-# Run with coverage
-npm test -- --coverage
-```
-
-### Writing Tests
-
-1. Write tests for new functionality
-2. Update tests when modifying existing code
-3. Ensure all tests pass before committing
-4. Aim for meaningful coverage, not 100% coverage
-
-## Git Conventions
-
-### Branch Naming
-
-- `feature/` - New features
-- `fix/` - Bug fixes
-- `refactor/` - Code refactoring
-- `docs/` - Documentation updates
-- `test/` - Test additions/updates
-
-### Commit Messages
-
-Write clear, concise commit messages:
-- Use present tense ("Add feature" not "Added feature")
-- Keep the first line under 72 characters
-- Reference issue numbers when applicable
-
-Example:
-```
-Add user authentication endpoint
-
-- Implement JWT token generation
-- Add password hashing utility
-- Create login/logout routes
-
-Fixes #123
-```
-
-### Pull Requests
-
-- Provide a clear description of changes
-- Link related issues
-- Include test plan or testing notes
-- Request appropriate reviewers
-
-## Important Notes for AI Assistants
-
-### Before Making Changes
-
-1. **Read before editing** - Always read and understand files before modifying them
-2. **Check dependencies** - Understand how changes might affect other parts of the codebase
-3. **Verify assumptions** - Don't assume file contents; read them first
-
-### When Writing Code
-
-1. **Match existing style** - Follow patterns already established in the codebase
-2. **Avoid introducing vulnerabilities** - Be mindful of security (XSS, injection, etc.)
-3. **Keep it simple** - Prefer straightforward solutions over clever ones
-4. **Don't add unnecessary dependencies** - Use existing libraries when possible
-
-### After Making Changes
-
-1. **Run tests** - Ensure all tests pass
-2. **Check for lint errors** - Run the linter if configured
-3. **Verify the build** - Ensure the project builds successfully
-4. **Test manually** - When applicable, verify changes work as expected
-
-## Configuration Files
-
-| File | Purpose |
-|------|---------|
-| `package.json` / `pyproject.toml` | Project dependencies and scripts |
-| `.eslintrc` / `.flake8` | Linter configuration |
-| `.prettierrc` / `black.toml` | Code formatter settings |
-| `tsconfig.json` / `setup.cfg` | Language/build configuration |
-| `.env.example` | Environment variable template |
-| `.gitignore` | Git ignore patterns |
-
-## Environment Variables
-
-> List important environment variables here as the project develops.
-
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `NODE_ENV` | Environment (development/production) | Yes |
-| `DATABASE_URL` | Database connection string | Yes |
-| `API_KEY` | External API key | No |
-
-## Troubleshooting
-
-### Common Issues
-
-> Document common issues and solutions as they arise.
-
-1. **Issue:** [Description]
-   - **Solution:** [How to fix]
-
-2. **Issue:** [Description]
-   - **Solution:** [How to fix]
-
-## Resources
-
-- [Project Documentation](./docs/)
-- [Contributing Guidelines](./CONTRIBUTING.md)
-- [API Documentation](./docs/api/)
+## 日々のメモ
+- 仕事の終わりに「今日やったこと・次にやること」を短くメモとして残す
 
 ---
-
-*Last updated: 2025-11-30*
+### マオさんとメイの記録
+- 雇用開始日: 2026年8月5日
+-（ここから下は、マオさんとメイの間で増やしていく欄です）
